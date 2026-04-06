@@ -1,0 +1,28 @@
+sky:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    host: localhost
+    port: 3306
+    database: sky_take_out
+    username: root         # 替换为空字符串
+    password: xew.0511         # 替换为空字符串
+  alioss:
+    endpoint: oss-cn-beijing.aliyuncs.com
+    access-key-id: xxx     # 替换为空字符串
+    access-key-secret: xxx # 替换为空字符串
+    bucket-name: xi-sky-take-out
+  redis:
+    host: 192.168.137.128
+    port: 6379
+    password: 123321        # 如果没有密码可注释或删除
+    database: 0
+    timeout: 2000ms
+    lettuce:
+      pool:
+        max-active: 8
+        max-idle: 8
+        min-idle: 0
+        max-wait: -1ms
+  wechat:
+    app-id: ''           # 替换为空字符串
+    app-secret: ''       # 替换为空字符串
